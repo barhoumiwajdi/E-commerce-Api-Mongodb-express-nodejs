@@ -3,6 +3,7 @@ const bcrypt = require('bcryptjs');
 const user = require('../Models/UserModel');
 const nodemailer = require('nodemailer');
 const Token = require('../../Models/Token');
+const randomString = require('randomstring')
 const email = process.env.EMAIL
 const password = process.env.PASSWORD
 exports.register = async (req, res) => {

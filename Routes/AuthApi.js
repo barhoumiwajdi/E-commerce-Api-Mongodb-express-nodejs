@@ -4,8 +4,8 @@ const router = express.Router();
 
 router.post('/register', register);
 router.post('/login', login);
-router.post('/resetPassword', resetPassword);
 router.post('/forgotPassword', forgotPassword);
+router.post('/resetPassword/:token', resetPassword);
 // router.post('/logout', LogOut)
 
 module.exports = router
